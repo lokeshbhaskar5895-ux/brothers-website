@@ -3,26 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BCB</title>
+    <title>BCB - Customer Portal</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; margin: 0; padding: 0; }
-        header { background: #2c3e50; color: white; padding: 20px; }
-        img.logo { width: 200px; margin-top: 10px; }
-        h1 { margin: 10px 0; font-size: 2.4em; letter-spacing: 1px; }
-        p.tagline { font-size: 1.2em; margin-top: 5px; }
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f4f4; }
+        header { background: #2c3e50; color: white; padding: 20px; text-align: center; }
+        h1 { margin: 0; font-size: 2.4em; }
+        .container { max-width: 500px; margin: 40px auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+        input, textarea, button { width: 100%; padding: 10px; margin: 8px 0; border: 1px solid #ccc; border-radius: 4px; }
+        button { background: #27ae60; color: white; font-size: 1em; border: none; cursor: pointer; }
+        button:hover { background: #219150; }
     </style>
 </head>
 <body>
     <header>
-        <img src="2%20CARD.jpg" alt="BCB Construction Logo" class="logo">
         <h1>BCB - Brothers Construction & Builders</h1>
-        <p class="tagline">Government Construction Experts (PWD, Nagar Palika, Nagar Parishad)</p>
+        <p>Customer Login & Details Submission</p>
     </header>
-    <main>
-        <p><strong>Address:</strong> Rajgarh Road, Pilani Dist-Jhunjhunu (Rajasthan) 333031</p>
-        <p><strong>Phone / WhatsApp:</strong> +91-9772998807 / 9829885795</p>
-        <p><strong>Email:</strong> brotherspilani03@gmail.com</p>
-        <p>We provide high-quality government construction services with commitment and integrity.</p>
-    </main>
+    <div class="container">
+        <h2>Customer Login</h2>
+        <form>
+            <input type="text" placeholder="Username" required>
+            <input type="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    <div class="container">
+        <h2>Provide Your Details</h2>
+        <form action="mailto:brotherspilani03@gmail.com" method="post" enctype="text/plain">
+            <input type="text" name="Full Name" placeholder="Full Name" required>
+            <input type="email" name="Email" placeholder="Email Address" required>
+            <input type="tel" name="Phone" placeholder="Phone Number" required>
+            <textarea name="Requirements" placeholder="Your Construction Requirements" rows="4" required></textarea>
+            <button type="submit">Submit Details</button>
+        </form>
+    </div>
 </body>
 </html>
+
